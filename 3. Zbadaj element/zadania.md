@@ -1,0 +1,1 @@
+1. Zbadaj element na dowolnie stronie z newsami i podmień nagłówek na jakiś śmieszny
