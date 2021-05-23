@@ -5,8 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WarsawJS</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    img {
+        width: 100px;
+    }
+    a {
+        color: white;        
+    text-decoration: none;
+    }
+    #header{
+        display: flex;
+        background: black;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    #nawigacja{
+        display: flex;
+        align-items: center;
+    }
+
+    #container{
+            background: url(https://warsawjs.com/static/photos/warsaw.jpg);
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        #box{
+            color: black;
+            background-color: white;
+            width: 270px;
+            height: 270px;
+            border: 5px solid red ;
+            border-radius: 5%;
+           padding: 20px;
+        }
+        button{
+            background: yellow;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        
+     #sekcja
+    {
+         width:1000px;
+         margin:auto;
+    }
+    #logo
+    {
+        text-align: center;
+    }
+    #wyrazy
+    {
+        display:flex; justify-content: space-around;
+
+    }
+ #wyrazy div
+    {
+     width:25%;
+     background:white;
+     text-align: center;
+    }
+    </style>
 </head>
 <body>
-    Finałowy projekt
+    <div id="header"> 
+        <div id="nawigacja">
+            <img src="https://warsawjs.com/static/images/logos/logo-warsawjs-with-white-text.svg" alt="No pacz"/>
+            <div>
+                <a href = "#">Warszataty</a>
+                <a href="#">Kurs</a>
+                <a href="#">Kontakt</a>
+            </div>
+        </div>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=150&layout=button_count&action=like&size=small&share=true&height=46&appId" width="150" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+    <div id="container">
+        <div> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7PGVqYv3EUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="box">
+            <h1>Zarejestruj się</h1>
+            <h2>Kolejne warsztaty już tuż tuż!</h2>
+            <button onclick="myFunction()">Zapisz się</button>
+        </div>
+    </div>
+    <div id="sekcja">
+     <div id="logo">
+     <h2>Dlaczego My?</h2>
+     </div>
+     <div id="wyrazy">
+           <div id="wyzwania">
+       <h3>Wyzwania</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas consequuntur exercitationem dolorum, dicta odit laborum quos perspiciatis sequi tenetur sapiente cum blanditiis, maiores totam obcaecati dolores placeat. Quibusdam, mollitia.
+            </p>
+    </div>
+       <div id="Community">
+           <h3>Community</h3>
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas consequuntur exercitationem dolorum, dicta odit laborum quos perspiciatis sequi tenetur sapiente cum blanditiis, maiores totam obcaecati dolores placeat. Quibusdam, mollitia.
+           </p>
+       </div>
+       <div id="Społeczność">
+           <h3>Społeczność</h3>
+           <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas consequuntur exercitationem dolorum, dicta odit laborum quos perspiciatis sequi tenetur sapiente cum blanditiis, maiores totam obcaecati dolores placeat. Quibusdam, mollitia.
+           </p>
+       </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          let email = prompt("Podaj email");
+          let komunikat = " zostal pomyslnie zapisany"
+          alert(email+komunikat)
+        }
+    </script>
 </body>
 </html>
